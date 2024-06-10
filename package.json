@@ -2,7 +2,7 @@
   "name": "telegram-game-react",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "homepage": "https://hmid-mhmdi.github.io/telegram-game-react/",
   "scripts": {
     "dev": "vite",
