@@ -1,5 +1,5 @@
 import { Box, Grid, Paper, Typography } from "@mui/material";
-import FindIcon from "@mui/icons-material/help";
+import FindIcon from "@mui/icons-material/Help";
 
 const GameCards = () => {
   return (
