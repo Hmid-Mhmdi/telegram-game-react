@@ -26,6 +26,8 @@ const AppBottomNavigation = () => {
 
   const location = useLocation();
 
+  console.log(location.pathname);
+
   return (
     <Box sx={{ width: 500 }}>
       <BottomNavigation
@@ -55,9 +57,9 @@ const AppBottomNavigation = () => {
           component={Link}
         />
         <BottomNavigationAction
-          to="/daily-tasks"
-          value="/daily-tasks"
-          label="Daily Tasks"
+          to="/tasks"
+          value="/tasks"
+          label="Tasks"
           icon={<DailyTaskIcon />}
           component={Link}
         />

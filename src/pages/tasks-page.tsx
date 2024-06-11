@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 
-const DailyTasksPage = () => {
+const TasksPage = () => {
   return (
     <>
       <Box height={200} />
@@ -9,4 +9,4 @@ const DailyTasksPage = () => {
   );
 };
 
-export default DailyTasksPage;
+export default TasksPage;
