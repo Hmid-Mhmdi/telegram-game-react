@@ -5,7 +5,7 @@ import FriendsIcon from "@mui/icons-material/People";
 import HomeIcon from "@mui/icons-material/Home";
 import ProfileIcon from "@mui/icons-material/VerifiedUser";
 import DailyTaskIcon from "@mui/icons-material/Assignment";
-import { Task, Wallet } from "@mui/icons-material";
+import { Wallet } from "@mui/icons-material";
 import { makeStyles } from "@mui/styles";
 import { useLocation, Link } from "react-router-dom";
 
