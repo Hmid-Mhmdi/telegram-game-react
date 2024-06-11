@@ -3,7 +3,7 @@ import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import FriendsIcon from "@mui/icons-material/People";
 import HomeIcon from "@mui/icons-material/Home";
-import ProfileIcon from "@mui/icons-material/VerifiedUser";
+import ProfileIcon from "@mui/icons-material/Person";
 import DailyTaskIcon from "@mui/icons-material/Assignment";
 import { Wallet } from "@mui/icons-material";
 import { makeStyles } from "@mui/styles";

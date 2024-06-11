@@ -4,6 +4,7 @@ import { red } from '@mui/material/colors';
 // A custom darkTheme for this app
 const darkTheme = createTheme({
   palette: {
+    mode: 'dark',
     primary: {
       main: '#556cd6',
     },
