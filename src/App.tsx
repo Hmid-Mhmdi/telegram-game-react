@@ -33,6 +33,10 @@ const router = createBrowserRouter([
         path: "/wallet",
         element: <WalletPage />,
       },
+      {
+        path: "",
+        element: <HomePage />,
+      },
     ],
   },
 ]);
