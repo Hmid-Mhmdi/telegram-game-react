@@ -9,7 +9,7 @@ import NotFoundPage from "./pages/notfound-page";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/telegram-game-react",
     element: <AppLayout />,
     errorElement: <NotFoundPage />,
     children: [
