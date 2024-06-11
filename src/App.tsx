@@ -14,28 +14,24 @@ const router = createBrowserRouter([
     errorElement: <NotFoundPage />,
     children: [
       {
-        index: true,
-        path: "",
-        element: <HomePage />,
-      },
-      {
-        path: "/profile",
+        path: "/telegram-game-react/profile",
         element: <ProfilePage />,
       },
       {
-        path: "/friends",
+        path: "/telegram-game-react/friends",
         element: <FriendsPage />,
       },
       {
-        path: "/tasks",
+        path: "/telegram-game-react/tasks",
         element: <TasksPage />,
       },
       {
-        path: "/wallet",
+        path: "/telegram-game-react/wallet",
         element: <WalletPage />,
       },
       {
-        path: "",
+        index: true,
+        path: "/telegram-game-react/",
         element: <HomePage />,
       },
     ],
