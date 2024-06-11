@@ -5,11 +5,13 @@ import ProfilePage from "./pages/profile-page";
 import FriendsPage from "./pages/friends-page";
 import TasksPage from "./pages/tasks-page";
 import WalletPage from "./pages/wallet-page";
+import NotFoundPage from "./pages/notfound-page";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement: <NotFoundPage />,
     children: [
       {
         index: true,
