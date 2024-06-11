@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import {
+  Alert,
   Avatar,
   AvatarGroup,
   Box,
   Button,
   Chip,
   Grid,
+  Snackbar,
   TextField,
 } from "@mui/material";
 import CoinIcon from "@mui/icons-material/Paid";
@@ -19,6 +21,8 @@ import User3Image from "../assets/user-3.jpg";
 import User4Image from "../assets/user-4.png";
 
 const HomePage = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <React.Fragment>
       <Box height={10} />
@@ -77,6 +81,7 @@ const HomePage = () => {
               variant="contained"
               color="info"
               fullWidth
+              onClick={() => setOpen(true)}
             >
               Enter Game
             </Button>
@@ -92,6 +97,21 @@ const HomePage = () => {
           </Grid>
         </Grid>
       </Box>
+
+      <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={() => setOpen(false)}
+      >
+        <Alert
+          onClose={() => setOpen(false)}
+          severity="success"
+          variant="filled"
+          sx={{ width: "100%" }}
+        >
+          You Added To Game Successfuly !
+        </Alert>
+      </Snackbar>
     </React.Fragment>
   );
 };

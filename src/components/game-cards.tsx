@@ -63,13 +63,18 @@ const GameCards = () => {
               </Grid>
             </Grid>
             <Grid xs={10} item container direction={"column"} spacing={2}>
-              <Grid item container direction={"row"}>
+              <Grid
+                item
+                container
+                direction={"row"}
+                justifyContent={"space-around"}
+              >
                 <Grid
                   item
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
@@ -81,7 +86,7 @@ const GameCards = () => {
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
@@ -93,7 +98,7 @@ const GameCards = () => {
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
@@ -105,57 +110,7 @@ const GameCards = () => {
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
-                  height={85}
-                  sx={{ border: "1px solid white" }}
-                  borderRadius={2}
-                >
-                  <FindIcon fontSize="large" />
-                </Grid>
-              </Grid>
-              <Grid item container direction={"row"}>
-                <Grid
-                  item
-                  container
-                  justifyContent="center"
-                  alignItems={"center"}
-                  xs={3}
-                  height={85}
-                  sx={{ border: "1px solid white" }}
-                  borderRadius={2}
-                >
-                  <FindIcon fontSize="large" />
-                </Grid>
-                <Grid
-                  item
-                  container
-                  justifyContent="center"
-                  alignItems={"center"}
-                  xs={3}
-                  height={85}
-                  sx={{ border: "1px solid white" }}
-                  borderRadius={2}
-                >
-                  <FindIcon fontSize="large" />
-                </Grid>
-                <Grid
-                  item
-                  container
-                  justifyContent="center"
-                  alignItems={"center"}
-                  xs={3}
-                  height={85}
-                  sx={{ border: "1px solid white" }}
-                  borderRadius={2}
-                >
-                  <FindIcon fontSize="large" />
-                </Grid>
-                <Grid
-                  item
-                  container
-                  justifyContent="center"
-                  alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
@@ -163,14 +118,18 @@ const GameCards = () => {
                   <FindIcon fontSize="large" />
                 </Grid>
               </Grid>
-
-              <Grid item container direction={"row"}>
+              <Grid
+                item
+                container
+                direction={"row"}
+                justifyContent={"space-around"}
+              >
                 <Grid
                   item
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
@@ -182,7 +141,7 @@ const GameCards = () => {
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
@@ -194,7 +153,7 @@ const GameCards = () => {
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
@@ -206,7 +165,7 @@ const GameCards = () => {
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
@@ -215,13 +174,18 @@ const GameCards = () => {
                 </Grid>
               </Grid>
 
-              <Grid item container direction={"row"}>
+              <Grid
+                item
+                container
+                direction={"row"}
+                justifyContent={"space-around"}
+              >
                 <Grid
                   item
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
@@ -233,7 +197,7 @@ const GameCards = () => {
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
@@ -245,7 +209,7 @@ const GameCards = () => {
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
@@ -257,7 +221,63 @@ const GameCards = () => {
                   container
                   justifyContent="center"
                   alignItems={"center"}
-                  xs={3}
+                  xs={2.8}
+                  height={85}
+                  sx={{ border: "1px solid white" }}
+                  borderRadius={2}
+                >
+                  <FindIcon fontSize="large" />
+                </Grid>
+              </Grid>
+
+              <Grid
+                item
+                container
+                direction={"row"}
+                justifyContent={"space-around"}
+              >
+                <Grid
+                  item
+                  container
+                  justifyContent="center"
+                  alignItems={"center"}
+                  xs={2.8}
+                  height={85}
+                  sx={{ border: "1px solid white" }}
+                  borderRadius={2}
+                >
+                  <FindIcon fontSize="large" />
+                </Grid>
+                <Grid
+                  item
+                  container
+                  justifyContent="center"
+                  alignItems={"center"}
+                  xs={2.8}
+                  height={85}
+                  sx={{ border: "1px solid white" }}
+                  borderRadius={2}
+                >
+                  <FindIcon fontSize="large" />
+                </Grid>
+                <Grid
+                  item
+                  container
+                  justifyContent="center"
+                  alignItems={"center"}
+                  xs={2.8}
+                  height={85}
+                  sx={{ border: "1px solid white" }}
+                  borderRadius={2}
+                >
+                  <FindIcon fontSize="large" />
+                </Grid>
+                <Grid
+                  item
+                  container
+                  justifyContent="center"
+                  alignItems={"center"}
+                  xs={2.8}
                   height={85}
                   sx={{ border: "1px solid white" }}
                   borderRadius={2}
