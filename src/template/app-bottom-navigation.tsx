@@ -33,8 +33,8 @@ const AppBottomNavigation = () => {
         className={classes.root}
       >
         <BottomNavigationAction
-          to="/telegram-game-react"
-          value="/telegram-game-react"
+          to="/telegram-game-react/home"
+          value="/telegram-game-react/home"
           label="Home"
           icon={<HomeIcon />}
           component={Link}

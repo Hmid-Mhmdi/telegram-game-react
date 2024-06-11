@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         index: true,
-        path: "/telegram-game-react/",
+        path: "/telegram-game-react/home",
         element: <HomePage />,
       },
     ],
