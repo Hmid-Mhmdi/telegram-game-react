@@ -36,8 +36,8 @@ const AppBottomNavigation = () => {
         className={classes.root}
       >
         <BottomNavigationAction
-          to="/home"
-          value="/home"
+          to="/"
+          value="/"
           label="Home"
           icon={<HomeIcon />}
           component={Link}

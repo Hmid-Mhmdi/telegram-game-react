@@ -11,12 +11,11 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<HomePage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/friends" element={<FriendsPage />} />
           <Route path="/tasks" element={<TasksPage />} />
           <Route path="/wallet" element={<WalletPage />} />
-          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
         <AppLayout />
       </BrowserRouter>
