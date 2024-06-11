@@ -23,10 +23,7 @@ const useStyles = makeStyles({
 
 const AppBottomNavigation = () => {
   const classes = useStyles();
-
   const location = useLocation();
-
-  console.log(location.pathname);
 
   return (
     <Box sx={{ width: 500 }}>
