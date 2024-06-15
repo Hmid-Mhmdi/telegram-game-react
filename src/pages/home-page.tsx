@@ -11,14 +11,14 @@ import {
   TextField,
 } from "@mui/material";
 import CoinIcon from "@mui/icons-material/Paid";
-import avatar from "../assets/admin-avatar.jpg";
-import BattleIcon from "../assets/battle-icon.png";
+import avatar from "../assets/images/admin-avatar.jpg";
+import BattleIcon from "../assets/images/battle-icon.png";
 import GameTimer from "../components/game-timer";
 import GameCards from "../components/game-cards";
-import User1Image from "../assets/user-1.png";
-import User2Image from "../assets/user-2.png";
-import User3Image from "../assets/user-3.jpg";
-import User4Image from "../assets/user-4.png";
+import User1Image from "../assets/images/user-1.png";
+import User2Image from "../assets/images/user-2.png";
+import User3Image from "../assets/images/user-3.jpg";
+import User4Image from "../assets/images/user-4.png";
 
 const HomePage = () => {
   const [open, setOpen] = useState(false);

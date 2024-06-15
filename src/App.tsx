@@ -6,6 +6,8 @@ import FriendsPage from "./pages/friends-page";
 import TasksPage from "./pages/tasks-page";
 import WalletPage from "./pages/wallet-page";
 import NotFoundPage from "./pages/notfound-page";
+import { useEffect, useState } from "react";
+import Loading from "./components/loading";
 
 const router = createBrowserRouter([
   {
@@ -39,9 +41,21 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
   return (
     <>
-      <RouterProvider router={router}></RouterProvider>
+      {loading ? (
+        <Loading />
+      ) : (
+        <RouterProvider router={router}></RouterProvider>
+      )}
     </>
   );
 };
