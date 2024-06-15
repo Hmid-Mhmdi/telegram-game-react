@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Alert,
   Avatar,
@@ -19,11 +19,21 @@ import User1Image from "../assets/images/user-1.png";
 import User2Image from "../assets/images/user-2.png";
 import User3Image from "../assets/images/user-3.jpg";
 import User4Image from "../assets/images/user-4.png";
+import Loading from "../components/loading";
 
 const HomePage = () => {
   const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  return (
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+  return loading ? (
+    <Loading />
+  ) : (
     <React.Fragment>
       <Box height={10} />
       <Grid paddingX={2} container direction={"row"}>
