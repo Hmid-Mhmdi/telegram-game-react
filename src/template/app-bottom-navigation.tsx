@@ -32,29 +32,29 @@ const AppBottomNavigation = () => {
         className={classes.root}
       >
         <BottomNavigationAction
-          to="/home"
-          value="/home"
+          to="/telegram-game-react/home"
+          value="/telegram-game-react/home"
           label="Home"
           icon={<HomeIcon />}
           component={Link}
         />
         <BottomNavigationAction
-          to="/profile"
-          value="/profile"
+          to="/telegram-game-react/profile"
+          value="/telegram-game-react/profile"
           label="Profile"
           icon={<ProfileIcon />}
           component={Link}
         />
         <BottomNavigationAction
-          to="/friends"
-          value="/friends"
+          to="/telegram-game-react/friends"
+          value="/telegram-game-react/friends"
           label="Friends"
           icon={<FriendsIcon />}
           component={Link}
         />
         <BottomNavigationAction
-          to="/tasks"
-          value="/tasks"
+          to="/telegram-game-react/tasks"
+          value="/telegram-game-react/tasks"
           label="Tasks"
           icon={<DailyTaskIcon />}
           component={Link}
@@ -62,8 +62,8 @@ const AppBottomNavigation = () => {
 
         <BottomNavigationAction
           component={Link}
-          to="/wallet"
-          value="/wallet"
+          to="/telegram-game-react/wallet"
+          value="/telegram-game-react/wallet"
           label="Wallet"
           icon={<Wallet />}
         />
