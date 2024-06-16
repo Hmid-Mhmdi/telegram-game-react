@@ -10,8 +10,6 @@ import WalltImage from "../assets/images/crypto-wallet.jpg";
 
 const WalletPage = () => {
   const [loading, setLoading] = useState(true);
-  const [tokenBalances, setTokenBalances] = useState({});
-  const wallet = useTonWallet();
   const [tonConnectUI] = useTonConnectUI();
 
   useEffect(() => {
