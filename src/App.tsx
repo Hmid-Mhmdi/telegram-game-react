@@ -9,29 +9,29 @@ import NotFoundPage from "./pages/notfound-page";
 
 const router = createBrowserRouter([
   {
-    path: "/telegram-game-react",
+    path: "/",
     element: <AppLayout />,
     errorElement: <NotFoundPage />,
     children: [
       {
-        path: "/telegram-game-react/profile",
+        path: "/profile",
         element: <ProfilePage />,
       },
       {
-        path: "/telegram-game-react/friends",
+        path: "/friends",
         element: <FriendsPage />,
       },
       {
-        path: "/telegram-game-react/tasks",
+        path: "/tasks",
         element: <TasksPage />,
       },
       {
-        path: "/telegram-game-react/wallet",
+        path: "/wallet",
         element: <WalletPage />,
       },
       {
         index: true,
-        path: "/telegram-game-react/home",
+        path: "/home",
         element: <HomePage />,
       },
     ],
