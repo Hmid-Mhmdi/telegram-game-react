@@ -1,10 +1,6 @@
 import { Grid, Box } from "@mui/material";
 import { useEffect, useState } from "react";
-import {
-  TonConnectButton,
-  useTonConnectUI,
-  useTonWallet,
-} from "@tonconnect/ui-react";
+import { TonConnectButton, useTonConnectUI } from "@tonconnect/ui-react";
 import Loading from "../components/loading";
 import WalltImage from "../assets/images/crypto-wallet.jpg";
 
