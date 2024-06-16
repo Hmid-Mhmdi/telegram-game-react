@@ -1,13 +1,18 @@
 import { Grid, Box } from "@mui/material";
 import { useEffect, useState } from "react";
-import { TonConnectButton, useTonConnectUI } from "@tonconnect/ui-react";
+import {
+  TonConnectButton,
+  useTonConnectUI,
+  useTonWallet,
+} from "@tonconnect/ui-react";
 import Loading from "../components/loading";
 import WalltImage from "../assets/images/crypto-wallet.jpg";
 
 const WalletPage = () => {
   const [loading, setLoading] = useState(true);
   const [tokenBalances, setTokenBalances] = useState({});
-  const { isConnected, connect, account } = useTonConnectUI();
+  const wallet = useTonWallet();
+  const [tonConnectUI] = useTonConnectUI();
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,20 +20,18 @@ const WalletPage = () => {
     }, 3000);
   }, []);
 
-  useEffect(() => {
-    if (isConnected && account) {
-      console.log(isConnected, account);
-      // Get the token balances
-      account
-        .getTokenBalances()
-        .then((balances) => {
-          setTokenBalances(balances);
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    }
-  }, [isConnected, account]);
+  useEffect(
+    () =>
+      tonConnectUI.onStatusChange((wallet) => {
+        if (
+          wallet?.connectItems?.tonProof &&
+          "proof" in wallet?.connectItems.tonProof
+        ) {
+          console.log(wallet?.connectItems);
+        }
+      }),
+    []
+  );
 
   return loading ? (
     <Loading />
@@ -39,23 +42,7 @@ const WalletPage = () => {
 
         <Box height={20}></Box>
 
-        <div>
-          <TonConnectButton />
-          {isConnected ? (
-            <div>
-              <h1>Token Balances</h1>
-              <ul>
-                {Object.keys(tokenBalances).map((token) => (
-                  <li key={token}>
-                    {token}: {tokenBalances[token]}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : (
-            <p>Connect to Tonkepeer to see your token balances</p>
-          )}
-        </div>
+        <TonConnectButton />
       </Grid>
     </>
   );
