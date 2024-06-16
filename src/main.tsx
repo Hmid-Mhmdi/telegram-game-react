@@ -11,7 +11,7 @@ WebApp.ready();
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <TonConnectUIProvider manifestUrl="https://github.com/Hmid-Mhmdi/telegram-game-react/blob/main/tonconnect-manifest.json">
+    <TonConnectUIProvider manifestUrl="https://hmid-mhmdi.github.io/telegram-game-react/assets/tonconnect-manifest.json">
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <App />
