@@ -11,6 +11,7 @@ export default function AppBottomNavigation() {
   const navigate = useNavigate();
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+    console.log(event);
     setValue(newValue);
     navigate(newValue);
   };
