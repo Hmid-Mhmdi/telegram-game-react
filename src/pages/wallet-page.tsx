@@ -1,8 +1,7 @@
-import { Grid, Box } from "@mui/material";
 import { useEffect, useState } from "react";
-import { TonConnectButton, useTonConnectUI } from "@tonconnect/ui-react";
+import { useTonConnectUI } from "@tonconnect/ui-react";
 import Loading from "../components/loading";
-import WalltImage from "../assets/images/crypto-wallet.jpg";
+import { Box, Typography } from "@mui/material";
 
 const WalletPage = () => {
   const [loading, setLoading] = useState(true);
@@ -30,15 +29,9 @@ const WalletPage = () => {
   return loading ? (
     <Loading />
   ) : (
-    <>
-      <Grid container>
-        <img src={WalltImage} style={{ width: "100%" }} />
-
-        <Box height={20}></Box>
-
-        <TonConnectButton />
-      </Grid>
-    </>
+    <Box>
+      <Typography>Wallet Page</Typography>
+    </Box>
   );
 };
 

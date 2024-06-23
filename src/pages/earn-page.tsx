@@ -1,8 +1,8 @@
-import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import Loading from "../components/loading";
+import { Box, Typography } from "@mui/material";
 
-const FriendsPage = () => {
+const EarnPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -14,11 +14,10 @@ const FriendsPage = () => {
   return loading ? (
     <Loading />
   ) : (
-    <>
-      <Box height={200} />
-      <Typography align="center">Friends Page</Typography>
-    </>
+    <Box>
+      <Typography>Earn Page</Typography>
+    </Box>
   );
 };
 
-export default FriendsPage;
+export default EarnPage;

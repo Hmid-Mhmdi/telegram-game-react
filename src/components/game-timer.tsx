@@ -1,6 +1,4 @@
-import { Box, Grid, LinearProgress } from "@mui/material";
 import { useEffect, useState } from "react";
-import TimerIcon from "@mui/icons-material/AvTimer";
 
 const GameTimer = () => {
   const [progress, setProgress] = useState(0);
@@ -21,24 +19,7 @@ const GameTimer = () => {
     };
   }, []);
 
-  return (
-    <Box mx={4}>
-      <Grid container justifyContent={"space-around"} alignItems={"center"}>
-        <Grid item xs={1}>
-          <TimerIcon fontSize="large" />
-        </Grid>
-        <Grid item xs={10}>
-          <LinearProgress
-            sx={{
-              "--LinearProgress-radius": "20px",
-            }}
-            variant="determinate"
-            value={progress}
-          ></LinearProgress>
-        </Grid>
-      </Grid>
-    </Box>
-  );
+  return <></>;
 };
 
 export default GameTimer;

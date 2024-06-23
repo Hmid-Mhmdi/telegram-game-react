@@ -1,9 +1,11 @@
-import { Typography } from "@mui/material";
-import { useLocation } from "react-router";
+import { Box, Typography } from "@mui/material";
 
 const NotFoundPage = () => {
-  console.log(useLocation().pathname);
-  return <Typography>NotFound</Typography>;
+  return (
+    <Box>
+      <Typography>Not Found</Typography>
+    </Box>
+  );
 };
 
 export default NotFoundPage;
