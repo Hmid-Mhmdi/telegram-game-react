@@ -5,17 +5,14 @@ import EarnPage from "./pages/earn-page";
 import WalletPage from "./pages/wallet-page";
 import NotFoundPage from "./pages/notfound-page";
 import WelcomePage from "./pages/welcome-page";
+import Layout from "./template/layout";
 
 const router = createBrowserRouter([
   {
     path: "/telegram-game-react",
     errorElement: <NotFoundPage />,
+    element: <Layout />,
     children: [
-      {
-        path: "/telegram-game-react/welcome",
-        element: <WelcomePage />,
-        index: true,
-      },
       {
         path: "/telegram-game-react/app",
         element: <AppLayout />,
@@ -34,6 +31,11 @@ const router = createBrowserRouter([
             element: <HomePage />,
           },
         ],
+      },
+      {
+        path: "/telegram-game-react/welcome",
+        element: <WelcomePage />,
+        index: true,
       },
     ],
   },
