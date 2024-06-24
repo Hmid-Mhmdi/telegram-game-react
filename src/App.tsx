@@ -10,16 +10,15 @@ const router = createBrowserRouter([
   {
     path: "/telegram-game-react",
     errorElement: <NotFoundPage />,
-
     children: [
       {
-        path:"/telegram-game-react/welcome",
-        element:<WelcomePage />
+        path: "/telegram-game-react/welcome",
+        element: <WelcomePage />,
+        index: true,
       },
       {
         path: "/telegram-game-react/app",
         element: <AppLayout />,
-       
         children: [
           {
             path: "/telegram-game-react/app/earn",
