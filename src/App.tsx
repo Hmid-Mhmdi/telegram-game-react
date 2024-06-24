@@ -8,27 +8,33 @@ import WelcomePage from "./pages/welcome-page";
 
 const router = createBrowserRouter([
   {
-    path: "/telegram-game-react/welcome",
-    errorElement: <NotFoundPage />,
-    element: <WelcomePage />,
-  },
-  {
     path: "/telegram-game-react",
-    element: <AppLayout />,
     errorElement: <NotFoundPage />,
+
     children: [
       {
-        path: "/telegram-game-react/earn",
-        element: <EarnPage />,
+        path:"/telegram-game-react/welcome",
+        element:<WelcomePage />
       },
       {
-        path: "/telegram-game-react/wallet",
-        element: <WalletPage />,
-      },
-      {
-        index: true,
-        path: "/telegram-game-react/home",
-        element: <HomePage />,
+        path: "/telegram-game-react/app",
+        element: <AppLayout />,
+       
+        children: [
+          {
+            path: "/telegram-game-react/app/earn",
+            element: <EarnPage />,
+          },
+          {
+            path: "/telegram-game-react/app/wallet",
+            element: <WalletPage />,
+          },
+          {
+            index: true,
+            path: "/telegram-game-react/app/home",
+            element: <HomePage />,
+          },
+        ],
       },
     ],
   },

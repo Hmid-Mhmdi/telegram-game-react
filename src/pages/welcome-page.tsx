@@ -58,7 +58,7 @@ function WelcomePage() {
   };
 
   const handleBack = () => {
-    navigate("/telegram-game-react/home");
+    navigate("/telegram-game-react/app/home");
   };
 
   const handleStepChange = (step: number) => {
